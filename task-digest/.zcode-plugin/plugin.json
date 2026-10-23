@@ -1,0 +1,43 @@
+{
+  "name": "task-digest",
+  "version": "0.1.2",
+  "description": "ZCode 任务摘要：读取本地任务与会话用量，生成可读摘要与可视化面板。",
+  "description_i18n": {
+    "en": "ZCode task digest: read local task and session usage, produce readable digests and a visual panel.",
+    "zh-CN": "ZCode 任务摘要：读取本地任务与会话用量，生成可读摘要与可视化面板。"
+  },
+  "author": {
+    "name": "X1882"
+  },
+  "license": "MIT",
+  "skills": "./skills",
+  "commands": "./commands",
+  "mcpServers": {
+    "task-digest": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "${ZCODE_PLUGIN_ROOT}/dist/server.mjs"
+      ],
+      "cwd": "${ZCODE_PROJECT_DIR}",
+      "env": {
+        "ZCODE_PLUGIN_DATA": "${ZCODE_PLUGIN_DATA}"
+      }
+    }
+  },
+  "ui": {
+    "surfaces": [
+      {
+        "id": "task-digest",
+        "title": {
+          "zh-CN": "任务摘要",
+          "en-US": "Task Digest"
+        },
+        "icon": "list",
+        "server": "task-digest",
+        "resourceUri": "ui://task-digest/panel.html",
+        "availability": "session"
+      }
+    ]
+  }
+}

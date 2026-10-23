@@ -1,0 +1,24 @@
+{
+  "name": "local-task-digest",
+  "interface": {
+    "displayName": "本地插件（task-digest 开发市场）"
+  },
+  "plugins": [
+    {
+      "name": "task-digest",
+      "source": "./task-digest",
+      "version": "0.1.2",
+      "description": "ZCode 任务摘要：任务数、token 用量、工具调用、成功率、待办进度，附侧栏可视化面板。",
+      "displayName": "任务摘要",
+      "displayName_i18n": {
+        "zh-CN": "任务摘要",
+        "en": "Task Digest"
+      },
+      "description_i18n": {
+        "zh-CN": "ZCode 任务摘要：任务数、token 用量、工具调用、成功率、待办进度，附侧栏可视化面板。",
+        "en": "ZCode task digest: task counts, token usage, tool calls, success rate and todo progress, with a side panel."
+      },
+      "category": "productivity"
+    }
+  ]
+}

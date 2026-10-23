@@ -1,0 +1,20 @@
+{
+  "name": "task-digest-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "ZCode task digest panel plugin",
+  "scripts": {
+    "build": "node task-digest/scripts/build.mjs",
+    "smoke": "node task-digest/scripts/smoke.mjs",
+    "test": "node task-digest/scripts/harness.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/ext-apps": "2.0.3",
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  }
+}
