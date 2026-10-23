@@ -57,6 +57,20 @@ npm test         # 面板 UI：模拟宿主 + Playwright 截图（需要 Chrome�
 - `totals` 有 30 秒内存缓存。
 - 数据库 schema 是 ZCode 内部实现，客户端升级后字段可能变化——升级后请先跑 `npm run smoke`。
 
+## 镜像
+
+同一份源码同步在五个仓库（HEAD 一致）：
+
+| 平台 | 仓库 |
+|---|---|
+| GitHub | https://github.com/Morningstar202604/task-digest |
+| GitHub | https://github.com/X33834/task-digest |
+| GitHub | https://github.com/badhope/task-digest |
+| Gitee | https://gitee.com/badhope/task-digest |
+| GitCode | https://gitcode.com/badhope/task-digest |
+
+推送全部：`git push origin master && git push github-x33834 master && git push github-badhope master && git push gitee master && git push gitcode master`
+
 ## License
 
 MIT
